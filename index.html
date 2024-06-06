@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>DomusInnov</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/ico.png" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//fonts.googleapis.com/css?family=Bree+Serif&amp;subset=latin-ext" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+    <style>
+      /* Añade el estilo CSS para el mapa */
+      .google-map-container {
+        height: 400px;
+        position: relative;
+      }
+      .google-map {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+    <script>
+      // Carga la API de Google Maps
+      function initMap() {
+        // Configura las opciones del mapa
+        var mapOptions = {
+          center: { lat: 7.122173, lng: -73.126747 }, // Coordenadas de Bucaramanga
+          zoom: 15, // Nivel de zoom
+          styles: [
+            // Añade los estilos del mapa aquí
+            { featureType: "administrative", elementType: "labels.text.fill", stylers: [{ color: "#444444" }] },
+            { featureType: "landscape", elementType: "all", stylers: [{ color: "#f2f2f2" }] },
+            { featureType: "poi", elementType: "all", stylers: [{ visibility: "off" }] },
+            { featureType: "poi.business", elementType: "geometry.fill", stylers: [{ visibility: "on" }] },
+            { featureType: "road", elementType: "all", stylers: [{ saturation: -100 }, { lightness: 45 }] },
+            { featureType: "road.highway", elementType: "all", stylers: [{ visibility: "simplified" }] },
+            { featureType: "road.arterial", elementType: "labels.icon", stylers: [{ visibility: "off" }] },
+            { featureType: "transit", elementType: "all", stylers: [{ visibility: "off" }] },
+            { featureType: "water", elementType: "all", stylers: [{ color: "#b4d4e1" }, { visibility: "on" }] },
+          ],
+        };
+
+        // Crea el mapa con las opciones configuradas
+        var map = new google.maps.Map(document.getElementById("google-map"), mapOptions);
+
+        // Añade un marcador en la ubicación de tu empresa
+        var marker = new google.maps.Marker({
+          position: { lat: 7.122173, lng: -73.126747 }, // Coordenadas de Calle de los Estudiantes 9-82, Bucaramanga, Santander, Colombia
+          map: map,
+          title: "Calle de los Estudiantes 9-82, Bucaramanga, Santander, Colombia",
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUTYWTf_-FxpiBFh_1gbli8-UV-8gnY0k=initMap"></script>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="" height="42" width="820" alt="smart home"></a></div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container"><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <div id="home">
+        <!-- Top Banner--><a class="section section-banner text-center d-none d-xl-block" href="#"></a><img src="images/banner/banner-bg-02-1920x60.jpg" srcset="images/banner/banner-bg-02-1920x60.jpg 1x, images/banner/banner-bg-02-1920x20.jpg 2x" alt="" width="1600" height="310"></a>
+        <!-- Page Header-->
+        <header class="section page-header">
+          <!-- RD Navbar-->
+          <div class="rd-navbar-wrap">
+            <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+              <div class="rd-navbar-main-outer">
+                <div class="rd-navbar-main">
+                  <!-- RD Navbar Panel-->
+                  <div class="rd-navbar-panel">
+                    <!-- RD Navbar Toggle-->
+                    <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                    <!-- RD Navbar Brand-->
+                    <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="images/logo.png" alt="" width="223" height="50"/></a></div>
+                  </div>
+                  <div class="rd-navbar-main-element">
+                    <div class="rd-navbar-nav-wrap">
+                      <!-- RD Navbar Share-->
+                      <div class="rd-navbar-share fl-bigmug-line-share27" data-rd-navbar-toggle=".rd-navbar-share-list">
+                        <ul class="list-inline rd-navbar-share-list">
+                          <li class="rd-navbar-share-list-item"><a class="icon fa fa-facebook" href="#"></a></li>
+                          <li class="rd-navbar-share-list-item"><a class="icon fa fa-twitter" href="#"></a></li>
+                          <li class="rd-navbar-share-list-item"><a class="icon fa fa-google-plus" href="#"></a></li>
+                          <li class="rd-navbar-share-list-item"><a class="icon fa fa-instagram" href="#"></a></li>
+                        </ul>
+                      </div>
+                      <ul class="rd-navbar-nav">
+                        <li class="rd-nav-item active"><a class="rd-nav-link" href="#home">DomusInnov</a></li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="#services">Servicios</a></li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="#projects">Proyectos</a></li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="#team">Equipo</a></li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="#news">Catálogo</a></li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="#contacts">Contacto</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+
+        <!-- Swiper-->
+        <section class="section swiper-container swiper-slider swiper-slider-classic" data-loop="true" data-autoplay="4859" data-simulate-touch="true" data-direction="vertical" data-nav="false">
+          <div class="swiper-wrapper text-center">
+            <div class="swiper-slide" data-slide-bg="images/slider-1-slide-2-1770x742.jpg">
+              <div class="swiper-slide-caption section-md">
+                <div class="container">
+                  <h1 data-caption-animate="fadeInLeft" data-caption-delay="0"style="color:#FFffff">Desarrollo de Sistemas Domóticos</h1>
+                  <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100"style="color:#FFffff">Desde nuestra creación, hemos brindado soluciones de software sostenibles y de alta calidad para fines de automatización de hogares y empresas de todo el mundo.</p><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">Ponerse en contacto</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-slide-bg="images/slider-1-slide-4-1770x742.jpg">
+              <div class="swiper-slide-caption section-md">
+                <div class="container">
+                  <h1 data-caption-animate="fadeInLeft" data-caption-delay="0" style="color:#FFffff">Proyecto</h1>
+                  <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100"style="color:#FFffff">Se llevo acabo un proyecto de Domótica, el cual al cliente se le brindo la solución teniendo en cuenta los cuatros pilares (Confort, Seguridad, Ahorro de energético y Comunicación).</p><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">Ponerse en contacto</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-slide-bg="images/slider-1-slide-6-1770x742.jpg">
+              <div class="swiper-slide-caption section-md">
+                <div class="container">
+                 <h1 data-caption-animate="fadeInLeft" data-caption-delay="0" style="color: #FFffff;">Los Cuatros Pilares de la Domótica</h1>
+                  <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100" style="color: #FFffff;">Se dice que una casa moderna debe ser tecnológicamente inteligente.</p><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">Ponerse en contacto</a>
+                 </div>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper Pagination-->
+          <div class="swiper-pagination__module">
+            <div class="swiper-pagination__fraction"><span class="swiper-pagination__fraction-index">00</span><span class="swiper-pagination__fraction-divider">/</span><span class="swiper-pagination__fraction-count">00</span></div>
+            <div class="swiper-pagination__divider"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+
+      </div>
+      <!-- news --><br>
+	<div class="container">
+		<div class="row row-30 justify-content-center">
+			<h2 class="agileits_w3layouts_head">Transforma Tú Hogar En Una <span style="color: red;">Casa Inteligente </span></h2>
+            <p class="agile_para" style="color: gainsboro;">Proveedores De Tecnología Inteligente Para Crear Valor A Tu Inmueble | Casas Inteligentes </p><br>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-4">
+                  <article class="box-icon-modern box-icon-modern-2" style="background-color: #F5F5F5;">
+                    <img src="images/img1-home-smartcontrols.jfif" alt="Empresa de domótica, automatización y casas inteligen, Santander – Colombia" class="img-responsive" width="300" height="200"/>
+                    <div class="box-icon-modern-decor"></div>
+                    <h4><a href="#" data-toggle="modal" data-target="#myModal">Toma decisiones acertadas</a></h4>
+                    <p style="color: grey;">Brinda confort, seguridad y elegancia con el uso de tecnología inteligente en tu inmueble.</p>
+                  </article>
+                </div>
+                <div class="col-sm-4">
+                  <article class="box-icon-modern box-icon-modern-2"style="background-color: #F5F5F5;">
+                    <img src="images/img2-home-smartcontrols.PNG" alt="Empresa de domótica, automatización y casas inteligen, Santander – Colombia" class="img-responsive" width="300" height="200"/>
+                    <div class="box-icon-modern-decor"></div>
+                    <h4><a href="#" data-toggle="modal" data-target="#myModal">Incrementa el valor de tu inmueble</a></h4>
+                    <p style="color: grey;">Transforma tu casa en una “CASA INTELIGENTE”.</p>
+                  </article>
+                </div>
+                <div class="col-sm-4">
+                  <article class="box-icon-modern box-icon-modern-2" style="background-color: #F5F5F5;">
+                    <img src="images/img3-home-smartcontrols.jpeg" alt="Empresa de domótica, automatización y casas inteligen, Santander – Colombia" class="img-responsive" width="300" height="200"/>
+                    <div class="box-icon-modern-decor"></div>
+                    <h4><a href="#" data-toggle="modal" data-target="#myModal">Optimiza tú estilo de vida</a></h4>
+                    <p style="color: grey;">La diferencia está en la comodidad que puedas tener, transforma tu forma de vivir.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+            
+		</div>
+	</div>
+<!-- //news -->
+
+      <!-- See all services-->
+      <section class="section section-sm section-first bg-default text-center" id="services">
+        <h2 class="agileits_w3layouts_head">Los cuatros pilares de la <span style="color: red;">Domótica</span></h2><br>
+        <div class="container">
+          <div class="row row-30 justify-content-center">
+            <div class="col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp"><img src="images/index-1-415x650.png" alt="" width="415" height="650"/>
+            </div>
+            <div class="col-lg-7 col-xl-6">
+              <div class="row row-30">
+                <div class="col-sm-6 wow fadeInRight">
+                  <article class="box-icon-modern box-icon-modern-custom">
+                    <div>
+                      <h5 class="box-icon-modern-big-title"><a href="#">Confort</a></h5>
+                      <div class="box-icon-modern-decor">
+                      </div>
+                      <p class="box-icon-modern-text">El hecho de poder controlar las bombillas y equipos de climatización y sistemas de ventilación desde nuestros dispositivos móviles, son solo algunos ejemplos que contribuyen a mejorar nuestro confort y comodidad.</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-sm-6 wow fadeInRight" data-wow-delay=".1s">
+                  <article class="box-icon-modern box-icon-modern-2">
+                    <h5 class="box-icon-modern-title"><a href="#">Seguridad</a></h5>
+                    <div class="box-icon-modern-decor"></div>
+                    <p class="box-icon-modern-text">Aplicada a las Smart Home. En este ámbito nos encontramos desde alarmas de intrusión para evitar robos, hasta detectores de todo tipo que velan por nuestra seguridad: fuego, humo, gas, fugas y escapes de agua.</p>
+                  </article>
+                </div>
+                <div class="col-sm-6 wow fadeInRight" data-wow-delay=".2s">
+                  <article class="box-icon-modern box-icon-modern-2">
+                    <h5 class="box-icon-modern-title"><a href="#">Ahorro<br>Energético</a></h5>
+                    <div class="box-icon-modern-decor"></div>
+                    <p class="box-icon-modern-text">A través de la gestión eficiente de la casa completa y mediante el uso de energías renovables, la programación de la climatización y calderas.</p>
+                  </article>
+                </div>
+                <div class="col-sm-6 wow fadeInRight" data-wow-delay=".3s">
+                  <article class="box-icon-modern box-icon-modern-2">
+                    <h5 class="box-icon-modern-title"><a href="#">Comunicación</a></h5>
+                    <div class="box-icon-modern-decor"></div>
+                    <p class="box-icon-modern-text">El sistema instalado en nuestra casa inteligente estará dotado de una infraestructura de comunicaciones que potenciará y facilitará el resto de características de la casa y proporcionará teleasistencia.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cta-->
+      <section class="section section-fluid bg-default">
+        <div class="parallax-container" data-parallax-img="images/parallax-1.png">
+          <div class="parallax-content section-xl context-dark bg-overlay-68 bg-mobile-overlay">
+            <div class="container">
+              <div class="row row-30 justify-content-end text-right">
+                <div class="col-sm-7">
+                  <h3 class="wow fadeInLeft" style="color: black;">Automatizaremos tu hogar</h3>
+                  <p style="color: black;">¿Necesita una solución de software única para su hogar o empresa? ¡Sabemos cómo ayudarte!</p>
+                  <div class="group-sm group-middle group justify-content-end"><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal">Ponerse en contacto</a><a class="button button-white-outline button-ujarak" href="#">Aprende más</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest Projects-->
+      <section class="section section-sm section-fluid bg-default text-center" id="projects">
+        <div class="container-fluid">
+          <h2 class="wow fadeInLeft">Últimos proyectos</h2>
+          <p class="quote-jean wow fadeInRight" data-wow-delay=".1s">En nuestro portafolio podrá explorar los últimos productos desarrollados para nuestros clientes para diferentes fines corporativos y de hogar. Nuestro equipo calificado de diseñadores de interfaces y desarrolladores de software siempre está listo para crear algo único para usted.</p>
+          <div class="isotope-filters isotope-filters-horizontal">
+            <button class="isotope-filters-toggle button button-md button-icon button-icon-right button-default-outline button-wapasha" data-custom-toggle="#isotope-3" data-custom-toggle-hide-on-blur="true" data-custom-toggle-disable-on-blur="true"><span class="icon fa fa-caret-down"></span>Filter</button>
+            <ul class="isotope-filters-list" id="isotope-3">
+              <li><a class="active" href="#" data-isotope-filter="*" data-isotope-group="gallery">Todos</a></li>
+              <li><a href="#" data-isotope-filter="Type 1" data-isotope-group="gallery">aplicaciones móviles</a></li>
+              <li><a href="#" data-isotope-filter="Type 2" data-isotope-group="gallery">Sistemas</a></li>
+              <li><a href="#" data-isotope-filter="Type 3" data-isotope-group="gallery">Control de calidad y pruebas</a></li>
+              <li><a href="#" data-isotope-filter="Type 4" data-isotope-group="gallery">Experiencia de usuario y diseño</a></li>
+            </ul>
+          </div>
+          <div class="row row-30 isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group">
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 4">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-1-420x350.jpg" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-1-1200x800-original.jpg" data-lightgallery="item"><img src="images/fullwidth-gallery-1-420x350.jpg" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Diseño UX</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">tiene por objetivo la creación de productos que resuelvan necesidades concretas de sus usuarios finales, consiguiendo la mayor satisfacción y mejor experiencia de uso posible con el mínimo esfuerzo.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 1" data-wow-delay=".1s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-2-420x350.jpg" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-2-1200x800-original.jpg" data-lightgallery="item"><img src="images/fullwidth-gallery-2-420x350.jpg" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Seguridad domótica</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">La seguridad domótica, también denominada seguridad del hogar inteligente, es el conjunto de tecnologías y sistemas empleados para proteger una vivienda mediante la integración de dispositivos y sistemas electrónicos conectados a la red.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 2" data-wow-delay=".2s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-3-420x350.jpg" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-3-1200x800-original.jpg" data-lightgallery="item"><img src="images/fullwidth-gallery-3-420x350.jpg" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Sistemas domóticos inalámbricos</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">En este tipo de instalaciones de sistemas domóticos para viviendas no se usan cables para transmitir la señal, sino que la información se envía a través de ondas de radiofrecuencia, que se encargan de interpretar las diversas órdenes que se comparten.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 3" data-wow-delay=".3s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-4-420x350.jpg" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-4-1200x800-original.jpg" data-lightgallery="item"><img src="images/fullwidth-gallery-4-420x350.jpg" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Tiempo entre Cliente-Servidor</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">Nuestros sistemas domóticos cuenta con un tiempo de 200ms en respuesta, modelo cliente-servidor. </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 3">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-5-420x350.jpg" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-5-1200x800-original.jpg" data-lightgallery="item"><img src="images/fullwidth-gallery-5-420x350.jpg" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Calendario de Inicio</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">Nuestro calendario de inicio puedes programar ciertos parametros para que se realicen de manera automática.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 1" data-wow-delay=".1s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-6-420x350.jpg" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-6-1200x800-original.jpg" data-lightgallery="item"><img src="images/fullwidth-gallery-6-420x350.jpg" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Iluminación inteligente para el hogar</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">Implica la instalación de un sistema tecnológico para la gestión de las bombillas de nuestro hogar mediante un smartphone, un mando a distancia, un hub de control o incluso nuestra propia voz.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 2" data-wow-delay=".2s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-7-420x350.jpg" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-7-1200x800-original.jpg" data-lightgallery="item"><img src="images/fullwidth-gallery-7-420x350.jpg" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Sistemas domóticos con cable compartido</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">También conocido como powerline, se trata de un sistema domótico en el que se emplea el cable de alimentación eléctrica normal, para hacer el envío de la señal de control.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 3" data-wow-delay=".3s">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail thumbnail-classic thumbnail-md">
+                <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-8-420x350.jpg" alt="" width="420" height="350"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-8-1200x800-original.jpg" data-lightgallery="item"><img src="images/fullwidth-gallery-8-420x350.jpg" alt="" width="420" height="350"/></a>
+                    <h5 class="thumbnail-classic-title"><a href="#">Sistema de Pruebas</a></h5>
+                  </div>
+                  <p class="thumbnail-classic-text">Nuestro sistema de prueba, se implementa los sensores, actuadores, interfaz y controlador para realizar testing de instalación y funcionamiento.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- team -->
+<div class="container">
+  <div class="row row-30 justify-content-center">
+    <h3 class="agileits_w3layouts_head">Tome El <span style="color: red;">Control</span> Desde Cualquier Parte Del Mundo</h3>
+    <p class="agile_para" style="color: grey;">Controle la iluminación, cortinas, chimenea, electrodomésticos, tv’s, equipos de sonido, A/A, calefactores, cerraduras eléctricas, sensores, sistemas de riesgo y mucho más...</p>
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-3">
+        <article class="box-icon-modern box-icon-modern-2" style="background-color: #F5F5F5;">
+          <img src="images/img7-smartcontrols-domotica.png" class="img-responsive" alt="Empresa de domótica, automatización y casas inteligen, Santander – Colombia" class="img-responsive" width="300" height="200"/>
+          <div class="box-icon-modern-decor"></div>
+          <h4>Iluminación</h4>
+        </article>
+      </div>
+      <div class="col-sm-3">
+        <article class="box-icon-modern box-icon-modern-2" style="background-color: #F5F5F5;">
+          <img src="images/img12-smartcontrols-domotica.PNG" class="img-responsive" alt="Empresa de domótica, automatización y casas inteligen, Santander – Colombia" class="img-responsive" width="300" height="200"/>
+          <div class="box-icon-modern-decor"></div>
+          <h4>Cortinas</h4>
+        </article>
+      </div>
+      <div class="col-sm-3">
+        <article class="box-icon-modern box-icon-modern-2" style="background-color: #F5F5F5;">
+          <img src="images/img9b-smartcontrols-domotica.PNG"class="img-responsive" alt="Empresa de domótica, automatización y casas inteligen, Santander – Colombia" class="img-responsive" width="300" height="200"/>
+          <div class="box-icon-modern-decor"></div>
+          <h4>Chapas/Control Acceso</h4>
+        </article>
+      </div> 
+      <div class="col-sm-3">
+        <article class="box-icon-modern box-icon-modern-2" style="background-color: #F5F5F5;">
+          <img src="images/img10-smartcontrols-domotica.png"class="img-responsive" alt="Empresa de domótica, automatización y casas inteligen, Santander – Colombia" class="img-responsive" width="300" height="200"/>
+          <div class="box-icon-modern-decor"></div>
+          <h4>Interruptores</h4>
+        </article>
+      </div>
+      <div class="col-sm-3"><br>
+        <article class="box-icon-modern box-icon-modern-2" style="background-color: #F5F5F5;">
+          <img src="images/img11-smartcontrols-domotica.jpg"class="img-responsive" alt="Empresa de domótica, automatización y casas inteligen, Santander – Colombia" class="img-responsive" width="300" height="200"/>
+          <div class="box-icon-modern-decor"></div>
+          <h4>Seguridad</h4>
+        </article>
+      </div>
+      <div class="col-sm-3"><br>
+        <article class="box-icon-modern box-icon-modern-2" style="background-color: #F5F5F5;">
+          <img src="images/img13-smartcontrols-domotica.png"class="img-responsive" alt="Empresa de domótica, automatización y casas inteligen, Santander – Colombia" class="img-responsive" width="300" height="200"/>
+          <div class="box-icon-modern-decor"></div>
+          <h4>Alarmas/Sensores</h4>
+        </article>
+      </div> 
+      <div class="col-sm-3"><br>
+        <article class="box-icon-modern box-icon-modern-2" style="background-color: #F5F5F5;">
+          <img src="images/img13a-smartcontrols-domotica.PNG"class="img-responsive" alt="Empresa de domótica, automatización y casas inteligen, Santander – Colombia" class="img-responsive" width="300" height="200"/>
+          <div class="box-icon-modern-decor"></div>
+          <h4>Audio / Video</h4>
+        </article>
+      </div> 
+      <div class="col-sm-3"><br>
+        <article class="box-icon-modern box-icon-modern-2" style="background-color: #F5F5F5;">
+          <img src="images/img15-smartcontrols-domotica.png"class="img-responsive" alt="Empresa de domótica, automatización y casas inteligen, Santander – Colombia" class="img-responsive" width="300" height="200"/>
+          <div class="box-icon-modern-decor"></div>
+          <h4>Mucho más…</h4>
+        </article>
+      </div>      
+    </div>
+  </div>
+</div>
+<!-- //team -->
+      <!-- Years of experience-->
+      <section class="section section-sm bg-default">
+        <div class="container">
+          <div class="row row-30 row-xl-24 justify-content-center align-items-center align-items-lg-start text-left">
+            <div class="col-md-6 col-lg-5 col-xl-4 text-center"><a class="text-img" href="#">
+                <div id="particles-js"></div><span class="counter">5</span></a></div>
+            <div class="col-sm-8 col-md-6 col-lg-5 col-xl-4">
+              <div class="text-width-extra-small offset-top-lg-24 wow fadeInUp">
+                <h3 class="title-decoration-lines-left">Años de experiencia</h3>
+                <p class="text-gray-500">DomusInnov es un equipo de diseñadores y desarrolladores de aplicaciones altamente experimentados que crean software único para usted y brindar las mejores soluciones aplicando los cuatros pilares de la domótica.</p><a class="button button-secondary button-pipaluk" href="#modalCta" data-toggle="modal" >Ponerse en contacto</a>
+              </div>
+            </div>
+            <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
+              <div class="row justify-content-center border-2-column offset-top-xl-26">
+                <div class="col-9 col-sm-6">
+                  <div class="counter-amy">
+                    <div class="counter-amy-number"><span class="counter">2</span><span class="symbol">k</span>
+                    </div>
+                    <h6 class="counter-amy-title">Aplicaciones Desarrolladas</h6>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-6">
+                  <div class="counter-amy">
+                    <div class="counter-amy-number"><span class="counter">3</span><span class="symbol">k</span></span>
+                    </div>
+                    <h6 class="counter-amy-title">Consultas</h6>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-6">
+                  <div class="counter-amy">
+                    <div class="counter-amy-number"><span class="counter">12</span>
+                    </div>
+                    <h6 class="counter-amy-title">Premios ganados</h6>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-6">
+                  <div class="counter-amy">
+                    <div class="counter-amy-number"><span class="counter">2</span><span class="symbol">k</span></span>
+                    </div>
+                    <h6 class="counter-amy-title">Soluciones Domóticas</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-12 align-self-center">
+              <div class="row row-30 justify-content-center">
+                <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft"><a class="clients-classic" href="#"><img src="images/clients-9-270x117.png" alt="" width="270" height="117"/></a></div>
+                <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay=".1s"><a class="clients-classic" href="#"><img src="images/clients-10-270x117.png" alt="" width="270" height="117"/></a></div>
+                <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay=".2s"><a class="clients-classic" href="#"><img src="images/clients-3-270x117.png" alt="" width="270" height="117"/></a></div>
+                <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay=".3s"><a class="clients-classic" href="#"><img src="images/clients-11-270x117.png" alt="" width="270" height="117"/></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Meet The Team-->
+      <section class="section section-sm section-fluid bg-default" id="team">
+        <div class="container-fluid">
+          <h2>Conoce al equipo</h2>
+          <div class="row row-sm row-30 justify-content-center">
+            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight">
+              <!-- Team Classic-->
+              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="images/team-11-420x424.png" alt="" width="420" height="424"/></a>
+                <div class="team-classic-caption">
+                  <h4 class="team-classic-name"><a href="#">Andres M. Sinuco S.</a></h4>
+                  <p class="team-classic-status">Gerente General</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".1s">
+              <!-- Team Classic-->
+              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="images/team-12-420x424.png" alt="" width="420" height="424"/></a>
+                <div class="team-classic-caption">
+                  <h4 class="team-classic-name"><a href="#">Imanol Villamizar C.</a></h4>
+                  <p class="team-classic-status">UI y UX Designer</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".2s">
+              <!-- Team Classic-->
+              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="images/team-13-420x424.png" alt="" width="420" height="424"/></a>
+                <div class="team-classic-caption">
+                  <h4 class="team-classic-name"><a href="#">Karent M. Sanabria</a></h4>
+                  <p class="team-classic-status">Senior Developer</p>
+                </div>
+              </article>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- You dream — we embody-->
+      <section class="section section-sm bg-default text-md-left">
+        <div class="container">
+          <div class="row row-50 align-items-center justify-content-center justify-content-xl-between">
+            <div class="col-lg-6 col-xl-5 wow fadeInLeft">
+              <h2>Obtenga más con nosotros</h2>
+              <!-- Bootstrap tabs-->
+              <div class="tabs-custom tabs-horizontal tabs-line tabs-line-big text-center text-md-left" id="tabs-6">
+                <!-- Nav tabs-->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item" role="presentation"><a class="nav-link nav-link-big active" href="#tabs-6-1" data-toggle="tab">01</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-2" data-toggle="tab">02</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-3" data-toggle="tab">03</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-4" data-toggle="tab">04</a></li>
+                </ul>
+                <!-- Tab panes-->
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tabs-6-1">
+                    <h5 class="font-weight-normal">Panel de Control de tu Sistema Domótico gratis </h5>
+                    <p>Regularmente subimos nuevas aplicaciones gratuitas a nuestro sitio web, que es totalmente accesible para nuestros clientes y suscriptores para gestionar sus sistemas domóticos.</p>
+                    <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta" data-toggle="modal">Ponerse en Contacto</a><a class="button button-default-outline button-wapasha" href="#">Más Info</a></div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-6-2">
+                    <h5 class="font-weight-normal">SOCIALIZA</h5>
+                    <p>Cada aplicación que desarrollamos tiene soporte social incorporado que le permite permanecer conectado a sus cuentas en Facebook, Instagram, Twitter y otras redes..</p>
+                    <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta" data-toggle="modal">Ponerse en Contacto</a><a class="button button-default-outline button-wapasha" href="#">Más Info</a></div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-6-3">
+                    <h5 class="font-weight-normal">SERVICIO AL CLIENTE</h5>
+                    <p>Cada cliente de DomusInnov puede obtener acceso a nuestro soporte amigable y calificado las 24 horas, los 7 días de la semana, a través de chat o teléfono. ¡No dudes en consultarnos cualquier duda!</p>
+                    <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta" data-toggle="modal">Ponerse en Contacto</a><a class="button button-default-outline button-wapasha" href="#">Más Info</a></div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-6-4">
+                    <h5 class="font-weight-normal">GRAN USABILIDAD</h5>
+                    <p>Todos nuestros sistemas  están diseñadas para tener una gran usabilidad para poder operar fácilmente nuestras aplicaciones. Es por eso que nuestro software y sistemas domóticos tiene altas calificaciones y muchos premios.</p>
+                    <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta" data-toggle="modal">Ponerse en Contacto</a><a class="button button-default-outline button-wapasha" href="#">Más Info</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center wow fadeInUp" data-wow-delay=".1s">
+              <div class="owl-carousel owl-style-1" data-items="2" data-stage-padding="0" data-loop="true" data-margin="0" data-mouse-drag="true" data-autoplay="true"><a class="box-device" href="#"><img src="images/index-4-313x580.png" alt="" width="313" height="580"/></a><a class="box-device" href="#"><img src="images/index-5-313x580.png" alt="" width="313" height="580"/></a><a class="box-device" href="#"><img src="images/index-4-313x580.png" alt="" width="313" height="580"/></a><a class="box-device" href="#"><img src="images/index-5-313x580.png" alt="" width="313" height="580"/></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What people Say-->
+      <section class="section section-sm section-bottom-70 section-fluid bg-default">
+        <div class="container-fluid">
+          <h2>Lo que dice la gente</h2>
+          <div class="row row-50 row-sm">
+            <div class="col-md-6 col-xl-4 wow fadeInRight">
+              <!-- Quote Modern-->
+              <article class="quote-modern quote-modern-custom">
+                <div class="unit unit-spacing-md align-items-center">
+                  <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles" src="images/user-11-75x75.jpg" alt="" width="75" height="75"/></a></div>
+                  <div class="unit-body">
+                    <h4 class="quote-modern-cite"><a href="#">Cliente 1</a></h4>
+                    <p class="quote-modern-status">Cliente regular</p>
+                  </div>
+                </div>
+                <div class="quote-modern-text">
+                  <p class="q">DomusInnov ha transformado por completo la forma en que vivo en mi hogar. La seguridad, el confort, la eficiencia energética y la conectividad se combinan perfectamente en cada solución que ofrecen. ¡Gracias por hacer mi vida mucho más fácil y segura!</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
+              <!-- Quote Modern-->
+              <article class="quote-modern quote-modern-custom">
+                <div class="unit unit-spacing-md align-items-center">
+                  <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles" src="images/user-12-75x75.jpg" alt="" width="75" height="75"/></a></div>
+                  <div class="unit-body">
+                    <h4 class="quote-modern-cite"><a href="#">Cliente 2</a></h4>
+                    <p class="quote-modern-status">Cliente regular</p>
+                  </div>
+                </div>
+                <div class="quote-modern-text">
+                  <p class="q">¡No puedo dejar de hablar de DomusInnov! Desde que instalé sus soluciones de domótica, mi hogar se siente como algo salido del futuro. La seguridad, el confort, la eficiencia energética y la conectividad nunca habían sido tan accesibles. Recomiendo a todos que prueben sus productos.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4 wow fadeInRight" data-wow-delay=".2s">
+              <!-- Quote Modern-->
+              <article class="quote-modern quote-modern-custom">
+                <div class="unit unit-spacing-md align-items-center">
+                  <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles" src="images/user-20-75x75.jpg" alt="" width="75" height="75"/></a></div>
+                  <div class="unit-body">
+                    <h4 class="quote-modern-cite"><a href="#">Cliente 3</a></h4>
+                    <p class="quote-modern-status">Cliente regular</p>
+                  </div>
+                </div>
+                <div class="quote-modern-text">
+                  <p class="q">Como cliente de DomusInnov, puedo decir con confianza que su enfoque en los pilares de la domótica realmente marca la diferencia. La seguridad, el confort, la eficiencia energética y la conectividad están integrados de manera impecable en cada aspecto de sus soluciones. ¡No puedo imaginar mi vida sin ellos!</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing-->
+      <section class="section section-sm section-bottom-70 section-fluid bg-default">
+        <div class="container">
+          <h2>Precios</h2>
+          <div class="row row-30 justify-content-center">
+            <div class="col-md-6 col-lg-5 col-xl-4">
+              <div class="box-pricing box-pricing-black">
+                <div class="box-pricing-body">
+                  <h5 class="box-pricing-title">básico</h5>
+                  <h3 class="box-pricing-price">$500.00</h3>
+                  <div class="box-pricing-time">A PARTIR DE</div>
+                  <div class="box-pricing-divider">
+                    <div class="divider"></div><span>Básico</span>
+                  </div>
+                  <ul class="box-pricing-list">
+                    <li class="active">Sistema de Iluminación</li>
+                    <li>Sistema de vigilancia</li>
+                    <li>Sistema de seguridad (Reconocimiento facial)</li>
+                    <li>Sistema de climatización </li>
+                    <li class="active">Diseño UI y UX</li>
+                    <li>Gestión de configuración </li>
+                    <li>Integración de diferentes sistemas </li>
+                  </ul>
+                </div>
+                <div class="box-pricing-button"><a class="button button-lg button-block button-gray-4" href="#">adquirir</a></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-4">
+              <div class="box-pricing box-pricing-black box-pricing-popular">
+                <div class="box-pricing-body">
+                  <h5 class="box-pricing-title">Estandar</h5>
+                  <h3 class="box-pricing-price">$800.00</h3>
+                  <div class="box-pricing-time">A PARTIR DE</div>
+                  <div class="box-pricing-divider">
+                    <div class="divider"></div><span>Estandar</span>
+                  </div>
+                  <ul class="box-pricing-list">
+                    <li class="active">Sistema de Iluminación</li>
+                    <li class="active">Sistema de vigilancia</li>
+                    <li>Sistema de seguridad (Reconocimiento facial)</li>
+                    <li>Sistema de climatización </li>
+                    <li class="active">Diseño UI y UX</li>
+                    <li class="active">Gestión de configuración </li>
+                    <li>Integración de diferentes sistemas </li>
+                  </ul>
+                </div>
+                <div class="box-pricing-button"><a class="button button-lg button-block button-primary" href="#">adquirir</a></div>
+                <div class="box-pricing-badge">popular</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-4">
+              <div class="box-pricing box-pricing-black">
+                <div class="box-pricing-body">
+                  <h5 class="box-pricing-title">Premium</h5>
+                  <h3 class="box-pricing-price">$1200.00</h3>
+                  <div class="box-pricing-time">A PARTIR DE</div>
+                  <div class="box-pricing-divider">
+                    <div class="divider"></div><span>Premium</span>
+                  </div>
+                  <ul class="box-pricing-list">
+                    <li class="active">Sistema de Iluminación</li>
+                    <li class="active">Sistema de vigilancia</li>
+                    <li class="active">Sistema de seguridad (Reconocimiento facial)</li>
+                    <li class="active">Sistema de climatización </li>
+                    <li class="active">Diseño UI y UX</li>
+                    <li class="active">Gestión de configuración </li>
+                    <li class="active">Integración de diferentes sistemas </li>
+                  </ul>
+                </div>
+                <div class="box-pricing-button"><a class="button button-lg button-block button-gray-4" href="#">adquirir</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest blog posts-->
+      <section class="section section-sm bg-default" id="news">
+        <div class="container">
+          <h2>Catálogo Sensores y Actuadores</h2>
+          <div class="row row-45">
+            <div class="col-sm-6 col-lg-3 wow fadeInLeft">
+              <!-- Sensor de Temperatura -->
+              <article class="post post-modern">
+                <h4 class="post-modern-title">Sensor de Temperatura</h4>
+                <p class="post-modern-text">Características técnicas: Rango de temperatura: -20°C a 50°C, Precisión: ±0.5°C</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeInLeft" data-wow-delay=".1s">
+              <!-- Sensor de Humedad -->
+              <article class="post post-modern">
+                <h4 class="post-modern-title">Sensor de Humedad</h4>
+                <p class="post-modern-text">Características técnicas: Rango de humedad: 0% a 100%, Precisión: ±2%</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeInLeft" data-wow-delay=".2s">
+              <!-- Actuador de Iluminación -->
+              <article class="post post-modern">
+                <h4 class="post-modern-title">Actuador de Iluminación</h4>
+                <p class="post-modern-text">Características técnicas: Potencia: 10W, Voltaje: 12V, Frecuencia: 50Hz</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeInLeft" data-wow-delay=".3s">
+              <!-- Sensor de Movimiento -->
+              <article class="post post-modern">
+                <h4 class="post-modern-title">Sensor de Movimiento</h4>
+                <p class="post-modern-text">Características técnicas: Rango de detección: 5m, Frecuencia de muestreo: 10Hz</p>
+              </article>
+            </div>
+          </div>
+          <div class="row row-45">
+            <div class="col-sm-6 col-lg-3 wow fadeInLeft">
+              <!-- Actuador de Ventilación -->
+              <article class="post post-modern">
+                <h4 class="post-modern-title">Actuador de Ventilación</h4>
+                <p class="post-modern-text">Características técnicas: Potencia: 20W, Voltaje: 24V, Frecuencia: 60Hz</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeInLeft" data-wow-delay=".1s">
+              <!-- Sensor de Presión -->
+              <article class="post post-modern">
+                <h4 class="post-modern-title">Sensor de Presión</h4>
+                <p class="post-modern-text">Características técnicas: Rango de presión: 0Pa a 100Pa, Precisión: ±1Pa</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeInLeft" data-wow-delay=".2s">
+              <!-- Actuador de Calefacción -->
+              <article class="post post-modern">
+                <h4 class="post-modern-title">Actuador de Calefacción</h4>
+                <p class="post-modern-text">Características técnicas: Potencia: 50W, Voltaje: 12V, Frecuencia: 50Hz</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeInLeft" data-wow-delay=".3s">
+              <!-- Sensor de Luz -->
+              <article class="post post-modern">
+                <h4 class="post-modern-title">Sensor de Luz</h4>
+                <p class="post-modern-text">Características técnicas: Rango de luz: 0lux a 1000lux, Precisión: ±10lux</p>
+              </article>
+            </div>
+          </div>
+          <!-- Resto de filas y columnas -->
+        </div>
+      </section>
+      </div>
+      <!-- Contact information-->
+      <section class="section section-sm bg-default">
+        <div class="container">
+          <div class="row row-30 justify-content-center">
+            <div class="col-sm-8 col-md-6 col-lg-4">
+              <article class="box-contacts">
+                <div class="box-contacts-body">
+                  <div class="box-contacts-icon fl-bigmug-line-cellphone55"></div>
+                  <div class="box-contacts-decor"></div>
+                  <p class="box-contacts-link"><a href="tel:#">+57 311-000-0000</a></p>
+                  <p class="box-contacts-link"><a href="tel:#">+57 300-000-0001</a></p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-8 col-md-6 col-lg-4">
+              <article class="box-contacts">
+                <div class="box-contacts-body">
+                  <div class="box-contacts-icon fl-bigmug-line-up104"></div>
+                  <div class="box-contacts-decor"></div>
+                  <p class="box-contacts-link"><a href="#">Calle de los Estudiantes 9-82, Bucaramanga, Santander</a></p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-8 col-md-6 col-lg-4">
+              <article class="box-contacts">
+                <div class="box-contacts-body">
+                  <div class="box-contacts-icon fl-bigmug-line-chat55"></div>
+                  <div class="box-contacts-decor"></div>
+                  <p class="box-contacts-link"><a href="mailto:#">gerencia@domusinnoc.com</a></p>
+                  <p class="box-contacts-link"><a href="mailto:#">info@domusinnoc.com</a></p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form-->
+      <section class="section section-sm section-last bg-default text-left" id="contacts">
+        <div class="container">
+          <article class="title-classic">
+            <div class="title-classic-title">
+              <h3>Ponerse en contacto</h3>
+            </div>
+            <div class="title-classic-text">
+              <p style="color: grey;">Si tienes alguna duda, simplemente rellena el formulario de contacto y te responderemos en breve.</p>
+            </div>
+          </article>
+          <form class="rd-form rd-form-variant-2 rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+            <div class="row row-14 gutters-14">
+              <div class="col-md-4">
+                <div class="form-wrap">
+                  <input class="form-input" id="contact-your-name-2" type="text" name="name" data-constraints="@Required">
+                  <label class="form-label" for="contact-your-name-2">Tú Nombre</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-wrap">
+                  <input class="form-input" id="contact-email-2" type="email" name="email" data-constraints="@Email @Required">
+                  <label class="form-label" for="contact-email-2">E-mail</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-wrap">
+                  <input class="form-input" id="contact-phone-2" type="text" name="phone" data-constraints="@Numeric">
+                  <label class="form-label" for="contact-phone-2">Número de Celular</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-wrap">
+                  <label class="form-label" for="contact-message-2">Mensaje</label>
+                  <textarea class="form-input textarea-lg" id="contact-message-2" name="message" data-constraints="@Required"></textarea>
+                </div>
+              </div>
+            </div>
+            <button class="button button-primary button-pipaluk" type="submit">Enviar Mensaje</button>
+          </form>
+        </div>
+      </section>
+
+
+      <!-- Page Footer-->
+      <footer class="section section-fluid footer-minimal context-dark">
+        <div class="bg-gray-15">
+          <div class="container-fluid">
+            <div class="footer-minimal-inset oh">
+              <ul class="footer-list-category-2">
+                <li><a href="#">UI Design</a></li>
+                <li><a href="#">Windows/Mac OS Apps</a></li>
+                <li><a href="#">Android/iOS Apps</a></li>
+                <li><a href="#">Cloud Solutions</a></li>
+                <li><a href="#">Customer Support</a></li>
+              </ul>
+            </div>
+            <div class="footer-minimal-bottom-panel text-sm-left">
+              <div class="row row-10 align-items-md-center">
+                <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
+                  <div>
+                    <ul class="list-inline list-inline-sm footer-social-list-2">
+                      <li><a class="icon fa fa-facebook" href="#"></a></li>
+                      <li><a class="icon fa fa-twitter" href="#"></a></li>
+                      <li><a class="icon fa fa-google-plus" href="#"></a></li>
+                      <li><a class="icon fa fa-instagram" href="#"></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 order-sm-first">
+                  <!-- Rights-->
+                  <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>DomusInnov</span>
+                  </p>
+                </div>
+                <div class="col-sm-6 col-md-4 text-md-right"><span>Todos los derechos reservados</span> <span>Design&nbsp;by&nbsp;<a href="#">DomusInnov</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="modal fade" id="modalCta" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4>Contacta con nosotros</h4>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+              <form class="rd-form rd-form-variant-2 rd-mailform" data-form-output="form-output-global" data-form-type="contact-modal" method="post" action="bat/rd-mailform.php">
+                <div class="row row-14 gutters-14">
+                  <div class="col-12">
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-modal-name" type="text" name="name" data-constraints="@Required">
+                      <label class="form-label" for="contact-modal-name">Tú Nombre</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-modal-email" type="email" name="email" data-constraints="@Email @Required">
+                      <label class="form-label" for="contact-modal-email">E-mail</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-modal-phone" type="text" name="phone" data-constraints="@Numeric">
+                      <label class="form-label" for="contact-modal-phone">Número de Telefono</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-modal-message">Mensaje</label>
+                      <textarea class="form-input textarea-lg" id="contact-modal-message" name="message" data-constraints="@Required"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <button class="button button-primary button-pipaluk" type="submit">Enviar Mensaje</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- coded by Himic-->-->
+  </body>
+</html>
